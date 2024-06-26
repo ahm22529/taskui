@@ -1,5 +1,5 @@
-import 'package:ecommerapp/core/helper_functions/on_generate_routes.dart';
-import 'package:ecommerapp/fetures/splash/presention/view/splash.dart';
+import 'package:ecommerapp/features/home/presentation/views/home.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -23,8 +23,7 @@ class FruitHub extends StatelessWidget {
       ],
       supportedLocales: S.delegate.supportedLocales,
       locale: const Locale('ar'),
-      onGenerateRoute: onGenerateRoute,
-      initialRoute: SplashView.routeName,
+      home: Home(),
       debugShowCheckedModeBanner: false,
     );
   }
