@@ -13,7 +13,7 @@ class cusomrow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+      padding: const EdgeInsets.only(right: 20.0),
       child: Container(
         color: const Color(0xffEBF2F8),
         child: Row(
@@ -47,7 +47,7 @@ class cusomrowwithicon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+      padding: const EdgeInsets.only(right: 20.0),
       child: Container(
         color: const Color(0xffEBF2F8),
         child: Row(
