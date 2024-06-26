@@ -10,7 +10,6 @@ class lisddd extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      color: const Color(0xffEBF2F8),
       child: const Column(
         children: [
           cusomrow(
@@ -51,6 +50,9 @@ class lisddd extends StatelessWidget {
             titel: "فتحه سقف",
             iconData1: Icons.check,
             iconData2: Icons.camera_alt,
+          ),
+          SizedBox(
+            height: 5,
           ),
           cusomrow(
             image: 'assets/images/Porsche 911 New.svg',

@@ -14,17 +14,20 @@ class cusomrow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20.0),
-      child: Row(
-        children: [
-          CircleAvatar(
-            child: SvgPicture.asset(image),
-          ),
-          const SizedBox(
-            width: 10,
-          ),
-          Expanded(flex: 1, child: Text(titel)),
-          Expanded(flex: 1, child: Text(subtitel)),
-        ],
+      child: Container(
+        color: const Color(0xffEBF2F8),
+        child: Row(
+          children: [
+            CircleAvatar(
+              child: SvgPicture.asset(image),
+            ),
+            const SizedBox(
+              width: 10,
+            ),
+            Expanded(flex: 1, child: Text(titel)),
+            Expanded(flex: 1, child: Text(subtitel)),
+          ],
+        ),
       ),
     );
   }
@@ -45,17 +48,20 @@ class cusomrowwithicon extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20.0),
-      child: Row(
-        children: [
-          CircleAvatar(
-            child: Icon(iconData2),
-          ),
-          const SizedBox(
-            width: 10,
-          ),
-          Expanded(flex: 1, child: FittedBox(child: Text(titel))),
-          Expanded(flex: 5, child: Icon(iconData1)),
-        ],
+      child: Container(
+        color: const Color(0xffEBF2F8),
+        child: Row(
+          children: [
+            CircleAvatar(
+              child: Icon(iconData2),
+            ),
+            const SizedBox(
+              width: 10,
+            ),
+            Expanded(flex: 1, child: FittedBox(child: Text(titel))),
+            Expanded(flex: 5, child: Icon(iconData1)),
+          ],
+        ),
       ),
     );
   }
