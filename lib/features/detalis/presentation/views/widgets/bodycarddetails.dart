@@ -1,3 +1,4 @@
+import 'package:ecommerapp/features/detalis/presentation/views/widgets/infowithddetails.dart';
 import 'package:ecommerapp/features/home/presentation/views/widgets/Customgrid.dart';
 import 'package:ecommerapp/features/detalis/presentation/views/widgets/customlisttilel.dart';
 import 'package:ecommerapp/features/detalis/presentation/views/widgets/foterbuttom.dart';
@@ -51,66 +52,7 @@ class Bodycarddetails extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              const cusomrow(
-                image: 'assets/images/Porsche 911 New.svg',
-                titel: 'اللون الخارجي ',
-                subtitel: 'ابيض',
-              ),
-              const SizedBox(
-                height: 5,
-              ),
-              const cusomrow(
-                image: 'assets/images/Porsche 911 New.svg',
-                titel: 'اللون الخارجي ',
-                subtitel: 'ابيض',
-              ),
-              const SizedBox(
-                height: 5,
-              ),
-              const cusomrow(
-                image: 'assets/images/Porsche 911 New.svg',
-                titel: 'اللون الخارجي ',
-                subtitel: 'ابيض',
-              ),
-              const SizedBox(
-                height: 5,
-              ),
-              const cusomrowwithicon(
-                imag: 'assets/images/Porsche 911 New.svg',
-                titel: 'نوع المقعد ',
-                iconData1: Icons.check,
-                iconData2: Icons.directions_car,
-              ),
-              const SizedBox(
-                height: 5,
-              ),
-              const cusomrowwithicon(
-                imag: "assets/images/Porsche 911 New.svg",
-                titel: "فتحه سقف",
-                iconData1: Icons.check,
-                iconData2: Icons.camera_alt,
-              ),
-              const cusomrow(
-                image: 'assets/images/Porsche 911 New.svg',
-                titel: 'اللون الخارجي ',
-                subtitel: 'ابيض',
-              ),
-              const SizedBox(
-                height: 5,
-              ),
-              const cusomrow(
-                image: 'assets/images/Porsche 911 New.svg',
-                titel: 'اللون الخارجي ',
-                subtitel: 'ابيض',
-              ),
-              const SizedBox(
-                height: 5,
-              ),
-              const cusomrow(
-                image: 'assets/images/Porsche 911 New.svg',
-                titel: 'اللون الخارجي ',
-                subtitel: 'ابيض',
-              ),
+              const lisddd(),
               const SizedBox(
                 height: 20,
               ),
