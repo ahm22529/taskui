@@ -17,7 +17,7 @@ class Story extends StatelessWidget {
     return Row(
       children: carBrands.map((item) {
         return Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+          padding: const EdgeInsets.symmetric(horizontal: 4.0),
           child: CarBrandItem('assets/images/Image 1.png', 'بي ام دبليو'),
         );
       }).toList(),
