@@ -43,7 +43,7 @@ class Bodycarddetails extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * .09,
+                height: MediaQuery.of(context).size.height * .1,
               ),
               const status(),
               const SizedBox(

@@ -1,4 +1,6 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:ecommerapp/features/home/presentation/views/home.dart';
+import 'package:flutter/foundation.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -6,7 +8,12 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'generated/l10n.dart';
 
 void main() {
-  runApp(const FruitHub());
+  runApp(
+    DevicePreview(
+      enabled: !kReleaseMode,
+      builder: (context) => const FruitHub(), // Wrap your app
+    ), // Wrap your app
+  );
 }
 
 class FruitHub extends StatelessWidget {
@@ -15,6 +22,7 @@ class FruitHub extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      builder: DevicePreview.appBuilder,
       localizationsDelegates: const [
         S.delegate,
         GlobalMaterialLocalizations.delegate,
