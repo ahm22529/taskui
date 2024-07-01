@@ -19,14 +19,18 @@ class _HomeviewBodyState extends State<HomeviewBody> {
     return SingleChildScrollView(
       child: Column(
         children: [
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5),
             child: Story(),
           ),
           const SizedBox(
             height: 13,
           ),
-          Image.asset("assets/images/Image 6.png"),
+          Image.asset(
+            "assets/images/Image 6.png",
+            fit: BoxFit.fill,
+            width: MediaQuery.of(context).size.width,
+          ),
           const SizedBox(
             height: 13,
           ),
@@ -46,7 +50,11 @@ class _HomeviewBodyState extends State<HomeviewBody> {
               count: 6,
             ),
           ),
-          Image.asset("assets/images/Image 5.png")
+          Image.asset(
+            "assets/images/Image 5.png",
+            fit: BoxFit.fill,
+            width: MediaQuery.of(context).size.width,
+          )
         ],
       ),
     );

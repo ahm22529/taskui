@@ -30,8 +30,11 @@ class CarGridItem extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text('جي ام سي | الفئة الرابعة'),
-            Image.asset(
-              'assets/images/Image 1.png',
+            Expanded(
+              child: Image.asset(
+                'assets/images/Image 1.png',
+                fit: BoxFit.fill,
+              ),
             ), // ضع صورة السيارة هنا
             const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 2.0),

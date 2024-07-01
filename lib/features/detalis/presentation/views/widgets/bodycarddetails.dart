@@ -25,6 +25,7 @@ class Bodycarddetails extends StatelessWidget {
                 children: [
                   SizedBox(
                       width: MediaQuery.of(context).size.width,
+                      height: MediaQuery.of(context).size.height * .34,
                       child: Image.asset(
                         "assets/images/Image 1.png",
                         fit: BoxFit.cover,
@@ -32,7 +33,7 @@ class Bodycarddetails extends StatelessWidget {
                   const IconThree(),
                   Positioned(
                       left: MediaQuery.of(context).size.width * .02,
-                      top: MediaQuery.of(context).size.height * .3,
+                      top: MediaQuery.of(context).size.height * .31,
                       child: const Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
@@ -42,11 +43,11 @@ class Bodycarddetails extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * .12,
+                height: MediaQuery.of(context).size.height * .09,
               ),
               const status(),
               const SizedBox(
-                height: 10,
+                height: 15,
               ),
               const Makfol(),
               const SizedBox(

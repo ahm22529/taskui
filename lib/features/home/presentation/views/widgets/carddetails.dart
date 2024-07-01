@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:svg_flutter/svg.dart';
 
 class Carddetailes extends StatelessWidget {
@@ -10,17 +11,19 @@ class Carddetailes extends StatelessWidget {
   final String image, titel, pric;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 65,
-      color: Colors.white,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 10),
-        child: Column(
-          children: [
-            SizedBox(height: 25, child: SvgPicture.asset(image)),
-            FittedBox(child: Text(titel)),
-            FittedBox(child: Text(pric)),
-          ],
+    return AspectRatio(
+      aspectRatio: .74,
+      child: Container(
+        color: Colors.white,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          child: Column(
+            children: [
+              SizedBox(height: 20, child: SvgPicture.asset(image)),
+              FittedBox(fit: BoxFit.scaleDown, child: Text(titel)),
+              FittedBox(fit: BoxFit.scaleDown, child: Text(pric)),
+            ],
+          ),
         ),
       ),
     );
